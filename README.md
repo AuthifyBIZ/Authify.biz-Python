@@ -3,6 +3,10 @@
 
 This is the official Python API Wrapper for [Authify](https://authify.biz).
 
+> pip install Authify
+
+Go [here](https://pypi.org/project/Authify/) to original page.
+
 
 
 ### Login User

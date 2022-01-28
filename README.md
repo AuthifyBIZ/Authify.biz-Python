@@ -160,6 +160,8 @@ else:
 ```
 
 ### Complete Setup
+---
+
 ```python
 #pip install Authify==0.0.2
 from Authify import api

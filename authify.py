@@ -272,7 +272,7 @@ class api:
 
     # endregion
 
-    __api_endpoint = "https://authify.biz/api/handler.php"
+    __api_endpoint = "https://authify.biz/api/v1/handler/"
 
     __user_agent = "Mozilla Authify"
 

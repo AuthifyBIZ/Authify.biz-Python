@@ -1,19 +1,21 @@
-import json 
+import json  # json
 
-import binascii
+import binascii  # hex encoding
 
-import requests
+import requests  # https requests
 
-from uuid import uuid4 
+from uuid import uuid4  # gen random guid
 
 from Crypto.Cipher import AES
 from Crypto.Hash import SHA256
 from Crypto.Util.Padding import pad, unpad
+# aes + padding, sha256
 
 import webbrowser, platform, subprocess, datetime
 
 from requests_toolbelt.adapters.fingerprint import FingerprintAdapter
 
+# doesn't output the responses in a message box
 
 class api:
     program_version = program_key = api_key = ""
@@ -249,6 +251,7 @@ class api:
 
         return rq_out.text
 
+    # region user_data
     class user_data_class:
         username = email = var = ""
         expires = datetime.datetime.now()
@@ -267,7 +270,9 @@ class api:
 
         self.user_data.rank = data["rank"]
 
-    __api_endpoint = "https://authify.biz/api/handler.php"
+    # endregion
+
+    __api_endpoint = "https://authify.biz/api/v1/handler/"
 
     __user_agent = "Mozilla Authify"
 

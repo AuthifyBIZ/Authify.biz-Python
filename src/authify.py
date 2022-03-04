@@ -242,7 +242,7 @@ class api:
 
         rq.mount(
             self.__api_endpoint,
-            FingerprintAdapter('ac94e131a7aee8bfec3b856fcc3aaa19a1af9dca1f886d85456e4a26ca1e83dc')
+            FingerprintAdapter('d79290b915a44ebb342ac6555fd974b08764bb32fcf718081fdce626101bd272')
         )
 
         rq_out = rq.post(
